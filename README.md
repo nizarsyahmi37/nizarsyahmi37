@@ -13,7 +13,7 @@
 ### ⭐ One line that describes me best? 
 😺 An ambitious polymath that turn sins into virtues and vice versa.
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=nizarsyahmi37)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=alduin)
 
 <!--
 **nizarsyahmi37/nizarsyahmi37** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
