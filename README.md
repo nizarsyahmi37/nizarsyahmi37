@@ -1,4 +1,4 @@
-<p align="center"><img align="center" src="https://komarev.com/ghpvc/?username=nizarsyahmi37&abbreviated=true&label=Views&style=flat-square&color=00b2a2"></p>
+![Profile Views](https://komarev.com/ghpvc/?username=nizarsyahmi37&abbreviated=true&label=Views&style=flat-square&color=00b2a2)
 
 ### Hi there 👋
 👍 It's nice to meet you and thank you for stopping by. My name is Nizar Syahmi, a designer, programmer, strategist & writer.
