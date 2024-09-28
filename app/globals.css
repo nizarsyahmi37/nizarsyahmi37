@@ -20,6 +20,24 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.text-clip-default,
+.text-clip-default-glow {
+	@apply max-w-[1080px] text-transparent bg-[url('/assets/images/bg/texture.jpeg')] bg-center bg-cover bg-clip-text;
+}
+
+.text-neon {
+	@apply absolute text-background [text-shadow:0_0_1.5rem_var(--foreground)];
+}
+
+.text-neon:after {
+	@apply top-0 left-0 -z-10 absolute [content:attr(data-text)] [filter:blur(1.5rem)];
+}
+
+.text-clip-default-glow:after {
+	@apply top-0 left-0 -z-10 opacity-30 absolute [content:attr(data-text)] [filter:blur(0.3rem)] [text-shadow:0_0_0.15rem_var(--foreground)];
+}
+
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;

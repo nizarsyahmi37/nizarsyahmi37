@@ -11,10 +11,7 @@ export default function CountryPage() {
 
 	return (
 		<div>
-			<p>
-				{locale}
-			</p>
-			<p>
+			<p data-text={dictionary.greet} className="text-clip-default text-[15rem] font-bold">
 				{dictionary.greet}
 			</p>
 		</div>
