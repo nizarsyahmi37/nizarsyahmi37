@@ -1,0 +1,6 @@
+{
+	"title": "i18n Example",
+	"greet": "Hello!",
+	"subtitle": "Localized text based on geolocation headers",
+	"link": "See headers documentation"
+}

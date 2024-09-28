@@ -1,0 +1,6 @@
+{
+	"title": "Ejemplo de i18n",
+	"greet": "¡Hola!",
+	"subtitle": "Texto localizado basado en las cabeceras de geolocalización",
+	"link": "Ver la documentación de las cabeceras"
+}

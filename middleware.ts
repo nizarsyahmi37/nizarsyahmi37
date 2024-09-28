@@ -5,9 +5,10 @@ export const config = {
 }
 
 export default function middleware(req: NextRequest) {
-	const country = req.geo?.country?.toLowerCase() || "us"
-	const locale = req.headers.get("accept-language")?.split(",")?.[0] || "en-US"
+	const locale = req.headers.get("accept-language")?.split(",")?.[0] || "cn"
 
-	req.nextUrl.pathname = `/${locale}/${country}`
-	return NextResponse.rewrite(req.nextUrl)
+	req.nextUrl.pathname = `/${locale}`
+	return (
+		NextResponse.rewrite(req.nextUrl)
+	)
 }
