@@ -20,6 +20,15 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+body:before {
+    filter: url(#grainy);
+}
+
+body:after,
+body:before {
+    @apply fixed content-[""] w-full h-full z-[3023023023020] pointer-events-none opacity-15;
+}
+
 .text-clip-default,
 .text-clip-default-glow {
 	@apply max-w-[1080px] text-transparent bg-[url('/assets/images/bg/texture.jpeg')] bg-center bg-cover bg-clip-text;

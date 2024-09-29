@@ -29,6 +29,20 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
+				<svg className="pointer-events-none absolute cursor-none">
+					<filter id="grainy">
+						<feTurbulence 
+							type="fractalNoise"
+							baseFrequency="0.6"
+							numOctaves="3"
+							stitchTiles="stitch"
+						/>
+						<feColorMatrix 
+							type="saturate"
+							values="0"
+						/>
+					</filter>
+				</svg>
 				{children}
 			</body>
 		</html>
