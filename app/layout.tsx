@@ -1,49 +1,37 @@
 import type { Metadata } from "next"
 import { ReactNode } from "react"
-import localFont from "next/font/local"
-import "./globals.css"
+import { ThemeProvider } from "@/components/modules/theme"
+import { open_sans } from "@/lib/fonts"
 
-const geistSans = localFont({
-	src: "./fonts/GeistVF.woff",
-	variable: "--font-geist-sans",
-	weight: "100 900",
-})
-const geistMono = localFont({
-	src: "./fonts/GeistMonoVF.woff",
-	variable: "--font-geist-mono",
-	weight: "100 900",
-})
+import MainLayout from "@/components/modules/layout/main"
+
+import "./globals.css"
 
 export const metadata: Metadata = {
 	title: "NizarSyahmi37",
-	description: "Designer, Programmer, Strategist & Writer",
+	description: "Designer, Entrepreneur, Gamer, Programmer, Strategist & Writer"
 }
 
 export default function RootLayout({
-	children,
+	children
 }: Readonly<{
 	children: ReactNode
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
+			<head />
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${open_sans.className} font-medium antialiased`}
 			>
-				<svg className="pointer-events-none absolute cursor-none">
-					<filter id="grainy">
-						<feTurbulence 
-							type="fractalNoise"
-							baseFrequency="0.6"
-							numOctaves="3"
-							stitchTiles="stitch"
-						/>
-						<feColorMatrix 
-							type="saturate"
-							values="0"
-						/>
-					</filter>
-				</svg>
-				{children}
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="dark"
+					disableTransitionOnChange
+				>
+					<MainLayout>
+						{children}
+					</MainLayout>
+				</ThemeProvider>
 			</body>
 		</html>
 	)
