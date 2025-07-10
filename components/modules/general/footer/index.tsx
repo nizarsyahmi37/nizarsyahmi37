@@ -16,27 +16,6 @@ export default function Footer({
 	const [time, setTime] = useState<Date | null>(null)
 	const [mounted, setMounted] = useState<boolean>(false)
 
-	const formatTime = (date: Date) => {
-		const options: Intl.DateTimeFormatOptions = {
-			timeZone: "Asia/Singapore",
-			year: "numeric",
-			hour12: true,
-			hour: "2-digit",
-			minute: "2-digit",
-			second: "2-digit"
-		}
-		
-		return date.toLocaleTimeString("en-US", options)
-	}
-
-	const getTimeComponents = (date: Date) => {
-		const timeString = formatTime(date)
-		const [time, period] = timeString.split(" ")
-		const [hours, minutes, seconds] = time.split(":")
-		
-		return { hours, minutes, seconds, period }
-	}
-
 	useEffect(() => {
 		if (!mounted) {
 			setMounted(true)
