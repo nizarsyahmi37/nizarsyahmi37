@@ -15,7 +15,7 @@ export default function ClockLocal({
 
 	const formatTime = (date: Date) => {
 		const options: Intl.DateTimeFormatOptions = {
-			timeZone: "Asia/Singapore",
+			timeZone: general.timeZone,
 			hour12: true,
 			hour: "2-digit",
 			minute: "2-digit",

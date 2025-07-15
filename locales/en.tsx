@@ -6,7 +6,8 @@ export const general = {
 	title: "NizarSyahmi37",
 	description: "Designer, Programmer, Strategist, Writer",
 	email: "hello@nizarsyahmi37.com",
-	time: "Local time — GMT +8",
+	time: "Local time — GMT +7",
+	timeZone: "+07:00",
 	knowledge_is_power: "Knowledge is Power",
 	contact: "https://t.me/nizarsyahmi37"
 }
