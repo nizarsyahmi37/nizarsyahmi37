@@ -25,7 +25,7 @@ export default function Footer({
 
 	return (
 		<footer className={cn(
-			`grid grid-rows-[auto_1fr_auto] bg-primary min-h-[30vh] group w-full lg:w-[calc(100vw-4.5rem)]`,
+			`grid grid-rows-[auto_1fr_auto] bg-primary border-foreground border-t-2 min-h-[30vh] group w-full lg:w-[calc(100vw-4.5rem)]`,
 			className
 		)}>
 			<div id={`connect`} className={`p-6 grid grid-cols-[1fr_auto]`}>

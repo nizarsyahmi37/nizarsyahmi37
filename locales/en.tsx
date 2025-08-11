@@ -242,6 +242,65 @@ export const home = {
 	},
 	faqs: {
 		index: "05",
-		faqs: "FAQs"
+		faqs: "FAQs",
+		description: "Here are some of the most common questions we receive from clients and partners. If you have a question that isn't answered here, feel free to reach out directly.",
+		frequently_asked: "Frequently Asked",
+		data: [
+			{
+				id: "services",
+				title: "What services do you offer?",
+				description: "We provide tailored services in design (graphic & UI/UX), software and web/app development, strategy consulting (brand, product, go-to-market), and copywriting/content creation. Whether you need a complete solution or support in one area, we can help."
+			},
+			{
+				id: "clientele",
+				title: "Who do you typically work with?",
+				description: "We work with startups, established businesses, personal brands, and agencies — especially those building innovative digital products or looking to stand out through strong branding and storytelling."
+			},
+			{
+				id: "tools",
+				title: "What tools or tech do you use?",
+				description: "Our go-to tools include Figma, Adobe Creative Suite, and Next.js, React, TypeScript, Node.js for development. For strategy and writing, we rely on Notion, Miro, and SEO/content tools like Surfer and Hemingway."
+			},
+			{
+				id: "time",
+				title: "What's your typical turnaround time?",
+				description: "It depends on the project scope. A logo design might take 3-5 days, a website 2-4 weeks, and strategy or writing deliverables can range between 3-10 days. We'll always give a timeline estimate before we start."
+			},
+			{
+				id: "revisions",
+				title: "How many revisions are included?",
+				description: "Most packages include 2-3 rounds of revisions. We're flexible and collaborative — the goal is to get it right, but we'll set clear boundaries to avoid scope creep."
+			},
+			{
+				id: "communication",
+				title: "How do we communicate?",
+				description: "We typically use email, Telegram, or Notion for async communication and Zoom or Google Meet for calls. We value clear, prompt communication — and expect the same from clients."
+			},
+			{
+				id: "rates",
+				title: "What are your rates?",
+				description: "Rates depend on the complexity and timeline. We offer project-based pricing for clarity, and occasionally hourly rates for consulting or urgent tasks. We'll send a custom quote after understanding your needs."
+			},
+			{
+				id: "contracts",
+				title: "Do you provide contracts or invoices?",
+				description: "Yes. We work with clear contracts, and provide invoices for all payments. A deposit (usually 30-50%) is required to start a project."
+			},
+			{
+				id: "exclusions",
+				title: "What don't you do?",
+				description: "We don't take on projects without clear goals or unrealistic timelines. We also don't offer ongoing maintenance or support unless it's part of a defined scope."
+			},
+			{
+				id: "retainer",
+				title: "Can we work on a long-term basis?",
+				description: "Absolutely. We love working as an ongoing collaborator or fractional team member for clients who want someone versatile and dependable across design, dev, strategy, and writing."
+			},
+			{
+				id: "suitability",
+				title: "How do I know you're the right fit?",
+				description: "Let's chat. We don't believe in forcing a fit — if we're not right for your project, We'll be honest and may even refer you to someone better suited. But if you value quality, depth, and innovation, we'll likely click."
+			},
+		]
 	}
 }
