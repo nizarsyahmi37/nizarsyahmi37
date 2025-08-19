@@ -36,6 +36,10 @@ export default function ViewProfile() {
 						{general.description}
 					</h3>
 				</div>
+				<h3 className={`text-lg text-center font-bold mt-10`}>
+					Let's connect & collaborate
+				</h3>
+				<div className={`h-1 border-foreground border-t-2 my-2`} />
 				<div className={`py-4 w-fit grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 align-middle items-center justify-center max-w-[75vw] mx-auto`}>
 					<Link
 						className={`w-fit gap-1 grid items-center content-center align-middle justify-center group grid items-center align-middle justify-center hover:text-primary`}
