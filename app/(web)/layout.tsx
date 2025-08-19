@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
-import { StackProvider, StackTheme } from "@stackframe/stack";
-import { stackServerApp } from "../../stack";
+// import { StackProvider, StackTheme } from "@stackframe/stack";
+// import { stackServerApp } from "../../stack";
 import { ReactNode } from "react"
 import { ThemeProvider } from "@/components/modules/theme"
 import { open_sans } from "@/lib/fonts"
@@ -24,7 +24,8 @@ export default function RootLayout({
 			<head />
 			<body
 				className={`${open_sans.className} font-medium antialiased`}
-			><StackProvider app={stackServerApp}><StackTheme>
+			>
+				{/* <StackProvider app={stackServerApp}><StackTheme> */}
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="dark"
@@ -34,7 +35,8 @@ export default function RootLayout({
 						{children}
 					</MainLayout>
 				</ThemeProvider>
-			</StackTheme></StackProvider></body>
+				{/* </StackTheme></StackProvider> */}
+			</body>
 		</html>
 	)
 }
