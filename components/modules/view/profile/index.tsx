@@ -1,13 +1,16 @@
 import { FaTelegramPlane, FaInstagram, FaFacebookF, FaGithub, FaLinkedin, FaPinterest, FaYoutube, FaRedditAlien, FaTiktok } from "react-icons/fa"
 import { FaMedium, FaPatreon, FaXTwitter } from "react-icons/fa6"
+import { ExternalLink } from "lucide-react"
 import { general } from "@/locales/en"
 import { harlekin } from "@/lib/fonts"
 
 import Image from "next/image"
+import Link from "next/link"
 import ClockLocal from "../../clock/local"
 import ButtonMode from "../../button/mode"
 import profile from "@/public/assets/png/photo/profile.png"
-import Link from "next/link"
+import revoluzion from "@/public/assets/webp/logo/revoluzion.webp"
+import fractionax from "@/public/assets/webp/logo/fractionax.webp"
 
 export default function ViewProfile() {
 	return (
@@ -173,6 +176,83 @@ export default function ViewProfile() {
 							Tiktok
 						</p>
 					</Link>
+				</div>
+				<h3 className={`text-lg text-center font-bold mt-10`}>
+					My affiliation
+				</h3>
+				<div className={`h-1 border-foreground border-t-2 my-2`} />
+				<div className={`py-4 w-full grid gap-8 align-middle items-center max-w-[75vw] mx-auto`}>
+					<div className={`grid grid-cols-[90px_1fr] gap-4 w-full`}>
+						<Image
+							width={revoluzion.width / 4}
+							height={revoluzion.height / 4}
+							src={revoluzion.src}
+							alt={`Revoluzion | Your One-Stop Blockchain Solutions Provider`}
+							className={`p-3 w-[12rem] h-auto mx-auto py-3 transition duration-300 ease-in-out`}
+						/>
+						<div>
+							<h2 className={`font-bold text-lg`}>
+								Revoluzion
+							</h2>
+							<p className={`font-light text-sm`}>
+								Your One-Stop Blockchain Solutions Provider
+							</p>
+							<div className={`py-4 w-full flex gap-4`}>
+								<Link
+									className={`flex gap-2 align-middle items-center w-fit group hover:text-primary`}
+									href={"https://revoluzion.io"}
+									title={`Revoluzion | Your One-Stop Blockchain Solutions Provider`}
+									prefetch={true}
+								>
+									<p className={`text-sm font-semibold group-hover:scale-105`}>
+										Website
+									</p>
+									<ExternalLink className={`mx-auto w-4 h-4 group-hover:scale-110`} />
+								</Link>
+								<Link
+									className={`flex gap-2 align-middle items-center w-fit group hover:text-primary`}
+									href={"https://revoluzion.app"}
+									title={`Revoluzion | Your One-Stop Blockchain Solutions Provider`}
+									prefetch={true}
+								>
+									<p className={`text-sm font-semibold group-hover:scale-105`}>
+										dApp
+									</p>
+									<ExternalLink className={`mx-auto w-4 h-4 group-hover:scale-110`} />
+								</Link>
+							</div>
+						</div>
+					</div>
+					<div className={`grid grid-cols-[90px_1fr] gap-4 w-full`}>
+						<Image
+							width={fractionax.width / 4}
+							height={fractionax.height / 4}
+							src={fractionax.src}
+							alt={`Fractionax | Own a Piece of Premium Assets From Just $1`}
+							className={`p-3 w-[12rem] h-auto mx-auto py-3 transition duration-300 ease-in-out`}
+						/>
+						<div>
+							<h2 className={`font-bold text-lg`}>
+								Fractionax
+							</h2>
+							<p className={`font-light text-sm`}>
+								Own a Piece of Premium Assets From Just $1
+							</p>
+							<div className={`py-4 w-full flex gap-4`}>
+								<Link
+									className={`flex gap-2 align-middle items-center w-fit group hover:text-primary`}
+									href={"https://fractionax.app"}
+									title={`Fractionax | Own a Piece of Premium Assets From Just $1`}
+									prefetch={true}
+								>
+									<p className={`text-sm font-semibold group-hover:scale-105`}>
+										Website
+									</p>
+									<ExternalLink className={`mx-auto w-4 h-4 group-hover:scale-110`} />
+								</Link>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
