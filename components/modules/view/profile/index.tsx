@@ -11,6 +11,7 @@ import ButtonMode from "../../button/mode"
 import profile from "@/public/assets/png/photo/profile.png"
 import revoluzion from "@/public/assets/webp/logo/revoluzion.webp"
 import fractionax from "@/public/assets/webp/logo/fractionax.webp"
+import houseofbytez from "@/public/assets/webp/logo/houseofbytez.webp"
 
 export default function ViewProfile() {
 	return (
@@ -243,6 +244,36 @@ export default function ViewProfile() {
 									className={`flex gap-2 align-middle items-center w-fit group hover:text-primary`}
 									href={"https://fractionax.app"}
 									title={`Fractionax | Own a Piece of Premium Assets From Just $1`}
+									prefetch={true}
+								>
+									<p className={`text-sm font-semibold group-hover:scale-105`}>
+										Website
+									</p>
+									<ExternalLink className={`mx-auto w-4 h-4 group-hover:scale-110`} />
+								</Link>
+							</div>
+						</div>
+					</div>
+					<div className={`grid grid-cols-[90px_1fr] gap-4 w-full`}>
+						<Image
+							width={houseofbytez.width / 4}
+							height={houseofbytez.height / 4}
+							src={houseofbytez.src}
+							alt={`House of Bytez | A collective of builders, strategists, and innovators`}
+							className={`p-3 w-[12rem] h-auto mx-auto py-3 transition duration-300 ease-in-out`}
+						/>
+						<div>
+							<h2 className={`font-bold text-lg`}>
+								House of Bytez
+							</h2>
+							<p className={`font-light text-sm`}>
+								A collective of builders, strategists, and innovators
+							</p>
+							<div className={`py-4 w-full flex gap-4`}>
+								<Link
+									className={`flex gap-2 align-middle items-center w-fit group hover:text-primary`}
+									href={"https://houseofbytez.com"}
+									title={`House of Bytez | A collective of builders, strategists, and innovators`}
 									prefetch={true}
 								>
 									<p className={`text-sm font-semibold group-hover:scale-105`}>
