@@ -2,7 +2,11 @@
 
 import { useEffect } from "react"
 
-export default function AdSense(slot: string) {
+export default function AdSense({
+	slot
+} : {
+	slot: string
+}) {
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 			const script = document.createElement("script")
