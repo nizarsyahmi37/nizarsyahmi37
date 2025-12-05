@@ -2,6 +2,7 @@ import { impact } from "@/lib/fonts"
 import { home, terms } from "@/locales/en"
 
 import PageSectionLayout from "@/components/modules/layout/page/section"
+import AdSense from "@/components/modules/google/ads"
 
 const news = home.news
 
@@ -25,6 +26,10 @@ export default function ViewHomeSectionNews() {
 					{terms.to_serve_you_better.toLowerCase()}
 				</p>
 			</div>
+
+			<AdSense
+				slot={"7956892934"}
+			/>
 		</PageSectionLayout>
 	)
 }

@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 import PageSectionLayout from "@/components/modules/layout/page/section"
 import knowledgeCity from "@/public/assets/png/photo/knowledge-city.png"
+import AdSense from "@/components/modules/google/ads"
 
 const about = home.about
 
@@ -79,6 +80,9 @@ export default function ViewHomeSectionAbout() {
 							{terms.to_serve_you_better.toLowerCase()}
 						</p>
 					</div>
+					<AdSense
+						slot={"7875349492"}
+					/>
 				</div>
 			</div>
 		</PageSectionLayout>
